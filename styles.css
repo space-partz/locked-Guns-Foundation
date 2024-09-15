@@ -1,0 +1,1553 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    letter-spacing: 1px;
+    word-spacing: .75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* Navigation */
+.menu-items a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFCC5C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+/* Section Headings */
+.who-we-are h2,
+.about-us h2,
+.recent-causes h2,
+.upcoming-events h2,
+.charity-donors h2,
+.mission-vision h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.who-we-are h2 .highlight,
+.about-us h2 .highlight,
+.recent-causes h2 .highlight,
+.upcoming-events h2 .highlight,
+.charity-donors h2 .highlight,
+.mission-vision h2 .highlight {
+    color: #FFCC5C;
+}
+
+/* Section Subheadings */
+.who-we-are h3,
+.about-us h3,
+.recent-causes h3,
+.upcoming-events h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Donor Cards */
+.donor-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.donor-cause {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.donor-amount {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Footer */
+.site-footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFCC5C;
+}
+
+.site-footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFCC5C;
+}
+
+#back-to-top:hover {
+    background-color: #e6b84d;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(32, 31, 75, 0.123); /* Transparent navy blue background */
+    backdrop-filter: blur(10px); /* This creates the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust the padding-top of your main content to account for the fixed header */
+main {
+    padding-top: 0px; /* Adjust this value to match your header height */
+}
+
+/* Optional: Change header background on scroll */
+header.scrolled {
+    background-color: rgba(32, 31, 75, 0.8); /* More opaque when scrolled */
+}
+
+/* Ensure text is readable on the frosted background */
+.site-title,
+.menu-items a {
+    color: #0a2e3b; /* Navy blue color for better contrast */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
+}
+
+.menu-items a:hover {
+    color: #FFCC5C; /* Yellow color on hover */
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #FFCC5C;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items, .social-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li, .social-links li {
+    margin-left: 0.75rem;
+}
+
+.menu-items a, .social-links a {
+    font-size: 1rem;
+    color: #FFCC5C;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    margin-right: 1rem; /* Increase space between menu items */
+    letter-spacing: 0.1rem; /* Increase spacing between letters */
+}
+
+.social-links i {
+    font-size: 1rem;
+}
+
+/* Add hover effects as desired */
+.menu-items a:hover, .social-links a:hover {
+    color: #e6b84d; /* You might want to change this to a darker color for better contrast */
+}
+
+.hero {
+    background-image: url('Asset 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.hero-content {
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: rgb(32,31,75); /* purple blue color */
+    }
+
+    @media (max-width: 768px) {
+   
+        
+     
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .hero h1 span {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            color: rgb(32,31,75); /* purple blue color */
+            }
+    }
+
+.slider-dots {
+    margin-top: 2rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: white;
+}
+/* ... existing styles ... */
+.who-we-are {
+    display: flex;
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+
+.who-we-are .content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.who-we-are .image {
+    flex: 1;
+}
+
+.who-we-are img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.who-we-are img:hover {
+    transform: scale(1.02);
+}
+
+.who-we-are h2 {
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.who-we-are h2 .highlight {
+    color: #FFCC5C; /* This is the yellow color used in the project */
+}
+
+.who-we-are h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.who-we-are p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+
+.who-we-are button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FFCC5C;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 3px;
+}
+
+.who-we-are button:hover {
+    background-color: #e6b84d;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .who-we-are {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .who-we-are .content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .who-we-are h2 {
+        font-size: 2rem;
+    }
+
+    .who-we-are h3 {
+        font-size: 1.25rem;
+    }
+}
+
+.about-us {
+    display: flex;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.about-us .image {
+    flex: 1;
+    padding-right: 3rem; /* Add padding to the right of the image */
+}
+
+.about-us .content {
+    flex: 1;
+    padding-left: 3rem; /* Add padding to the left of the content */
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-us img:hover {
+    transform: scale(1.02);
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-us h2 .highlight {
+    color: #FFCC5C; /* This is the yellow color used in the project */
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.about-us button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FFCC5C;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 3px;
+}
+
+.about-us button:hover {
+    background-color: #e6b84d;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us .image {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-us .content {
+        padding-left: 0;
+    }
+
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Recent Causes Section */
+.recent-causes {
+    display: flex;
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+
+.recent-causes .content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.recent-causes .image {
+    flex: 1;
+}
+
+.recent-causes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.recent-causes img:hover {
+    transform: scale(1.02);
+}
+
+.recent-causes h2 {
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recent-causes h2 .highlight {
+    color: #FFCC5C; /* This is the yellow color used in the project */
+}
+
+.recent-causes h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.recent-causes p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.recent-causes button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FFCC5C;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 3px;
+}
+
+.recent-causes button:hover {
+    background-color: #e6b84d;
+    transform: translateY(-2px);
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    position: relative;
+    display: flex;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.upcoming-events .asymmetrical-block {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 60%;
+    height: calc(100% + 4rem);
+    background-color: #FFCC5C;
+    z-index: 1;
+}
+
+.upcoming-events .image {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.upcoming-events .content {
+    flex: 1;
+    padding-left: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.upcoming-events img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.upcoming-events img:hover {
+    transform: scale(1.02);
+}
+
+.upcoming-events h2 {
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.upcoming-events h2 .highlight {
+    color: #FFCC5C; /* This is the yellow color used in the project */
+}
+
+.upcoming-events h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.upcoming-events p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-events button {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(32,31,75);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 3px;
+}
+
+.upcoming-events button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Media Queries for both sections */
+@media (max-width: 768px) {
+    .recent-causes, .upcoming-events {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .recent-causes .content, .upcoming-events .content {
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .recent-causes h2, .upcoming-events h2 {
+        font-size: 2rem;
+    }
+
+    .recent-causes h3, .upcoming-events h3 {
+        font-size: 1.25rem;
+    }
+
+    .upcoming-events .asymmetrical-block {
+        top: -1rem;
+        left: -1rem;
+        width: 100%;
+        height: calc(100% + 2rem);
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lightbox-trigger {
+    cursor: pointer;
+}
+
+.charity-donors {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.charity-donors h2 {
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.charity-donors h2 .highlight {
+    color: #FFCC5C; /* This is the yellow color used in the project */
+}
+
+.donors-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.donor {
+    flex-basis: calc(25% - 2rem);
+    max-width: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.donor:hover {
+    transform: translateY(-5px);
+}
+
+.donor-portrait {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.donor-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+.donor-cause {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.donor-divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 0 1rem;
+}
+
+.donor-amount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.donor-amount {
+    font-size: 1.1rem;
+    color: #FFCC5C;
+    font-weight: bold;
+}
+
+.donated-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .donor {
+        flex-basis: calc(33.33% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .donor {
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .donor {
+        flex-basis: 100%;
+    }
+}
+
+.site-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: calc(25% - 2rem);
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #FFCC5C;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FFCC5C;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.subscribe-form input[type="email"] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.subscribe-form button {
+    padding: 0.5rem 1rem;
+    background-color: #FFCC5C;
+    color: #000000;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #e6b84d;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFCC5C;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFCC5C;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #e6b84d;
+    transform: translateY(-3px);
+}
+
+#back-to-top.show {
+    display: flex;
+}
+
+/* Offset for fixed header */
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; /* Adjust this value to match your header height */
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+.donor-amount {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Footer */
+.site-footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.site-footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Offset for fixed header */
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; /* Adjust this value to match your header height */
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+/* ... existing styles ... */
+
+/* Blog Hero Section */
+.blog-hero {
+    background-image: url('Asset 1.png'); /* Use an appropriate image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.blog-hero .hero-content {
+    max-width: 80%;
+}
+
+.blog-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(32,31,75);
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.blog-posts .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .blog-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .blog-posts {
+        padding: 3rem 1rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ... existing styles ... */
+
+/* Events Hero Section */
+.events-hero {
+    background-image: url('Asset 1.png'); /* Use an appropriate image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.events-hero .hero-content {
+    max-width: 80%;
+}
+
+.events-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(32,31,75);
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+/* Events List Section */
+.events-list {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.events-list .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-list h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#events {
+    list-style-type: none;
+    padding: 0;
+}
+
+#events li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .events-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .events-list {
+        padding: 3rem 1rem;
+    }
+
+    .events-list h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ... existing styles ... */
+
+/* Causes Hero Section */
+.causes-hero {
+    background-image: url('Asset 1.png'); /* Use an appropriate image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.causes-hero .hero-content {
+    max-width: 80%;
+}
+
+.causes-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(32,31,75);
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+
+/* Recent Causes Section */
+.recent-causes {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.recent-causes .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recent-causes h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cause {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.cause .image {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.cause .content {
+    flex: 2;
+}
+
+.cause img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cause img:hover {
+    transform: scale(1.02);
+}
+
+.cause h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.cause p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .cause {
+        flex-direction: column;
+    }
+
+    .cause .image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ... existing styles ... */
+
+/* About Hero Section */
+.about-hero {
+    background-image: url('Asset 1.png'); /* Use an appropriate image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.about-hero .hero-content {
+    max-width: 80%;
+}
+
+.about-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(32,31,75);
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.mission-vision .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-vision h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(32,31,75);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+    margin-bottom: 2rem;
+}
+
+.mission-vision h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.mission-vision p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .mission-vision {
+        padding: 3rem 1rem;
+    }
+
+    .mission-vision h2 {
+        font-size: 2rem;
+    }
+
+    .mission-vision h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ... existing styles ... */
+
+/* Contact Hero Section */
+.contact-hero {
+    background-image: url('Asset 1.png'); /* Use an appropriate image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+.contact-hero .hero-content {
+    max-width: 80%;
+}
+
+.contact-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(32,31,75);
+    text-shadow: 
+        1px 1px 0 #FFCC5C,  /* Yellow color */
+        -1px 1px 0 #FFCC5C,
+        1px -1px 0 #FFCC5C,
+        -1px -1px 0 #FFCC5C;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.contact-form-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FFCC5C;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 3px;
+}
+
+.contact-form button:hover {
+    background-color: #e6b84d;
+    transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form-section {
+        padding: 3rem 1rem;
+    }
+
+    .contact-form-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Hamburger menu styles */
+
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    font-size: 3.5em;
+    color: #e6c821;
+    letter-spacing: -.125em;
+    padding-right: .15em;
+}
+
+
+
+/* Media query for PHONE DEVICES */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .hamburger span .active {
+        transform: rotate(90deg);
+    }
+nav .menu-items{
+    display: none;
+}
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Media query for 4K screen sizes */
+@media (min-width: 2840px) {
+    html {
+        font-size: 150%;
+    }
+
+
+    button, label {
+        font-size: 130%;
+    }
+
+}
+
+/* slideshow */
+.event-slideshow {
+    position: absolute;
+    bottom: 0%; /* Position the slideshow at the bottom 10% of the hero image */
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    background: transparent;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    color: gold; /* Gold color for text */
+}
+
+.event-text {
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
